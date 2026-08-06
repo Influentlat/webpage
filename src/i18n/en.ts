@@ -2,16 +2,16 @@ import type { Messages } from './types';
 
 export const en: Messages = {
 	meta: {
-		title: 'Unreal Connections| Talent Management & Brand Partnerships',
+		title: 'Influent | Talent Management & Brand Partnerships',
 		description:
-			'Unreal Connectionsis a talent management and brand partnership agency delivering strategy, campaigns, and measurable growth for creators and companies.',
+			'Influent is a talent management and brand partnership agency delivering strategy, campaigns, and measurable growth for creators and companies.',
 	},
 	ogLocale: 'en_US',
 	a11y: {
 		skipToMain: 'Skip to main content',
 		navPrimary: 'Primary',
 		navSocial: 'Social media',
-		brandLogo: 'Unreal Talent',
+		brandLogo: 'Influent',
 		menuToggle: 'Toggle navigation menu',
 		menuOpen: 'Open navigation menu',
 		menuClose: 'Close navigation menu',
@@ -34,7 +34,7 @@ export const en: Messages = {
 	},
 	footer: {
 		privacy: 'Privacy notice',
-		copyright: 'Copyright © UnrealConnections',
+		copyright: 'Copyright © Influent',
 	},
 	statsLabels: [
 		{
@@ -56,7 +56,7 @@ export const en: Messages = {
 	about: {
 		title: 'Who we are',
 		subtitle:
-			'Unreal Talent Group SRL is a Costa Rican company specialized in influencer marketing and project development within the digital communication and advertising industry. With a track record backed by the execution of more than 400 marketing campaigns for highly recognized companies, Unreal is positioned as a strategic partner for brands looking to connect effectively with audiences through creators, experiences, and relevant narratives. Through its Unreal Connections unit, the company operates as a platform connecting brands and creators, currently managing a network of more than 50 active talents and executing 20 to 25 campaigns per month.',
+			'Influent is a Costa Rican company specialized in influencer marketing and project development within the digital communication and advertising industry. With a track record backed by the execution of more than 400 marketing campaigns for highly recognized companies, Influent is positioned as a strategic partner for brands looking to connect effectively with audiences through creators, experiences, and relevant narratives. The company operates as a platform connecting brands and creators, currently managing a network of more than 50 active talents and executing 20 to 25 campaigns per month.',
 		missionTitle: 'Our mission',
 		missionBody:
 			'Drive growth for brands and creators through high-impact influencer marketing, content, and entertainment strategies, connecting audiences with authentic narratives, executional excellence, and creative solutions focused on results.',
@@ -109,7 +109,7 @@ export const en: Messages = {
 		title: 'Brand partnerships & marketing',
 		lead: 'From launches to always-on programs, we design activations that feel native to each platform—then prove impact with clear reporting.',
 		logoStripTitle: '',
-		clientsHeadline: 'Clients behind unreal results',
+		clientsHeadline: 'Clients behind outstanding results',
 		clientsCarouselLabel: 'Scrolling list of client brand marks',
 		workTitle: 'Some campaigns with our talents',
 		workSubtitle:
@@ -158,9 +158,7 @@ export const en: Messages = {
 		asideTitle: 'Contact channels',
 		channelsLead: 'Reach us directly through any of these channels:',
 		channelEmail: 'Email',
-		channelPhone: 'Phone',
-		channelWhatsapp: 'WhatsApp',
-		phoneDisplay: '+506 8802 4631',
+		channelInstagram: 'Instagram',
 		mailSubject: 'Business inquiry — {name}',
 		mailLines: {
 			name: 'Name',

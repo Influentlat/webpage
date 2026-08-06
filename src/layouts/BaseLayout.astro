@@ -17,8 +17,8 @@ interface Props {
 }
 
 const {
-	title = 'UnrealTalent',
-	description = 'Unreal Connections— website coming soon.',
+	title = 'Influent',
+	description = 'Influent — talent management and brand partnerships.',
 	lang = 'en',
 	ogLocale,
 	robots = 'index, follow',
@@ -49,18 +49,12 @@ const defaultLangHref = site ? new URL('/en/', site).href : undefined;
 <html lang={htmlLang}>
 	<head>
 		<meta charset="utf-8" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Syne:wght@500..800&display=swap"
-			rel="stylesheet"
-		/>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="robots" content={robots} />
 		<meta name="description" content={description} />
-		<meta name="theme-color" content="#2450f9" />
+		<meta name="theme-color" content="#788878" />
 		<title>{title}</title>
 		{canonical && <link rel="canonical" href={canonical} />}
 		{canonical && altHref && defaultLangHref && (
@@ -70,7 +64,7 @@ const defaultLangHref = site ? new URL('/en/', site).href : undefined;
 				<link rel="alternate" hreflang="x-default" href={defaultLangHref} />
 			</>
 		)}
-		<meta property="og:site_name" content="UnrealTalent" />
+		<meta property="og:site_name" content="Influent" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:type" content={ogType} />

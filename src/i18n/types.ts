@@ -106,9 +106,7 @@ export interface Messages {
 		asideTitle: string;
 		channelsLead: string;
 		channelEmail: string;
-		channelPhone: string;
-		channelWhatsapp: string;
-		phoneDisplay: string;
+		channelInstagram: string;
 		mailSubject: string;
 		mailLines: { name: string; role: string; email: string; company: string };
 	};

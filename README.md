@@ -1,6 +1,6 @@
-# Unreal Connections(Astro)
+# Influent (Astro)
 
-Marketing homepage for **UnrealTalent** — static Astro site with SEO, accessibility helpers, and Netlify-hosted local video embeds.
+Marketing homepage for **Influent** — static Astro site with SEO, accessibility helpers, and Netlify-hosted local video embeds.
 
 - **Layout inspiration notes:** `docs/inspiration-wearedw-layout-review.md`
 - **Agent / standards:** `AGENTS.md`
