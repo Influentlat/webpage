@@ -2,9 +2,9 @@ import type { Messages } from './types';
 
 export const es: Messages = {
 	meta: {
-		title: 'Influent | Management de talento y alianzas de marca',
+		title: 'Influent | Especialistas en marketing de creadores en Costa Rica',
 		description:
-			'Influent es una agencia de management de talento y alianzas de marca que impulsa crecimiento medible para creadores y empresas.',
+			'Agencia costarricense de marketing de creadores. Conectamos marcas con más de 100 talentos. 500+ campañas entregadas. Management, campañas y producción.',
 	},
 	ogLocale: 'es_ES',
 	a11y: {
@@ -47,21 +47,21 @@ export const es: Messages = {
 		}
 	],
 	hero: {
-		eyebrow: 'Marketing de influencia',
+		eyebrow: 'Marketing de creadores',
 		title: 'Especialistas en marketing de creadores',
-		lead: 'Conectamos marcas con talentos para desarrollar Influence marketing top con los mejores resultados',
+		lead: 'Conectamos marcas líderes con talento creador en Costa Rica para campañas con resultados medibles en redes y digital.',
 		ctaTalent: 'Explora talento',
 		ctaContact: 'Inicia una campaña',
 	},
 	about: {
 		title: 'Quiénes somos',
 		subtitle:
-			'Influent es una compañía costarricense especializada en marketing de influencia y desarrollo de proyectos dentro de la industria de la comunicación digital y publicidad. Con una trayectoria respaldada por la ejecución de más de 400 campañas de marketing para empresas altamente reconocidas, Influent se posiciona como un socio estratégico para marcas que buscan conectar de manera efectiva con audiencias a través de creadores de contenido, experiencias y narrativas relevantes. La compañía opera como una plataforma de conexión entre marcas y creadores, gestionando actualmente una red de más de 50 talentos activos y ejecutando de 20 a 25 campañas mensuales.',
+			'Influent es una compañía costarricense especializada en marketing de creadores y desarrollo de proyectos dentro de la comunicación digital y publicidad. Con una trayectoria respaldada por la ejecución de más de 500 campañas de marketing para empresas altamente reconocidas, Influent se posiciona como un socio estratégico para marcas que buscan conectar de manera efectiva con audiencias a través de creadores de contenido, experiencias y narrativas relevantes. La compañía opera como una plataforma de conexión entre marcas y creadores, gestionando actualmente una red de más de 50 talentos activos y ejecutando de 20 a 25 campañas mensuales.',
 		missionTitle: 'Nuestra misión',
 		missionBody:
-			'Impulsar el crecimiento de marcas y creadores a través de estrategias de marketing de influencia, contenido y entretenimiento de alto impacto, conectando audiencias con narrativas auténticas, ejecución de excelencia y soluciones creativas orientadas a resultados.',
+			'Impulsar el crecimiento de marcas y creadores a través de estrategias de marketing de creadores, contenido y entretenimiento de alto impacto, conectando audiencias con narrativas auténticas, ejecución de excelencia y soluciones creativas orientadas a resultados.',
 		visionTitle: 'Nuestra visión',
-		visionBody: 'Ser la empresa líder en marketing de influencia y gestión de talento en Centroamérica, reconocida por su innovación, calidad de ejecución y capacidad de crear proyectos que marquen tendencia en la industria, generen valor sostenible para clientes y despierten el deseo de pertenecer en talentos y marcas.'
+		visionBody: 'Ser la empresa líder en marketing de creadores y gestión de talento en Centroamérica, reconocida por su innovación, calidad de ejecución y capacidad de crear proyectos que marquen tendencia en la industria, generen valor sostenible para clientes y despierten el deseo de pertenecer en talentos y marcas.'
 	},
 	services: {
 		title: 'Nuestros servicios',

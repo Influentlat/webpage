@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 /**
  * Set PUBLIC_SITE_URL in your host (e.g. Netlify / Cloudflare) to the canonical
- * production origin, no trailing slash — e.g. https://www.unrealtalent.com
+ * production origin, no trailing slash — e.g. https://www.influentlat.com
  * Required for sitemap, canonical URLs, and absolute OG / JSON-LD URLs.
  */
 const site = process.env.PUBLIC_SITE_URL;
@@ -14,7 +14,19 @@ const site = process.env.PUBLIC_SITE_URL;
 // https://astro.build/config
 export default defineConfig({
   ...(site ? { site } : {}),
-  integrations: site ? [sitemap()] : [],
+  integrations: site
+    ? [
+        sitemap({
+          filter: (page) => {
+            try {
+              return new URL(page).pathname !== '/';
+            } catch {
+              return true;
+            }
+          },
+        }),
+      ]
+    : [],
   trailingSlash: 'always',
 
   vite: {

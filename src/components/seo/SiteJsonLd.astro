@@ -1,9 +1,12 @@
 ---
+import { socialProfiles } from '../../data/social';
+
 interface Props {
 	inLanguage?: string;
+	description?: string;
 }
 
-const { inLanguage = 'en' } = Astro.props;
+const { inLanguage = 'en', description } = Astro.props;
 
 const site = Astro.site;
 if (!site) {
@@ -11,6 +14,8 @@ if (!site) {
 }
 
 const origin = site.origin;
+const logoUrl = new URL('/og/default.png', origin).href;
+const businessEmail = 'fabian@influentlat.com';
 
 const graph = [
 	{
@@ -18,13 +23,29 @@ const graph = [
 		'@id': `${origin}/#organization`,
 		name: 'Influent',
 		url: origin,
+		...(description ? { description } : {}),
+		logo: {
+			'@type': 'ImageObject',
+			url: logoUrl,
+		},
+		sameAs: [socialProfiles.instagram],
+		areaServed: {
+			'@type': 'Country',
+			name: 'Costa Rica',
+		},
+		contactPoint: {
+			'@type': 'ContactPoint',
+			contactType: 'sales',
+			email: businessEmail,
+			availableLanguage: ['English', 'Spanish'],
+		},
 	},
 	{
 		'@type': 'WebSite',
 		'@id': `${origin}/#website`,
 		name: 'Influent',
 		url: origin,
-		inLanguage: [inLanguage],
+		inLanguage: ['en', 'es'],
 		publisher: { '@id': `${origin}/#organization` },
 	},
 ];

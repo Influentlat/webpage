@@ -19,7 +19,7 @@ export function getStaticPaths() {
 
 const { lang: langParam } = Astro.params;
 if (!isLang(langParam ?? '')) {
-	return Astro.redirect('/en/', 302);
+	return Astro.redirect('/en/', 301);
 }
 const lang = langParam as Lang;
 const messages = getMessages(lang);
@@ -33,6 +33,7 @@ const canonicalPath = homePath(lang);
 	lang={lang}
 	ogLocale={messages.ogLocale}
 	canonicalPath={canonicalPath}
+	ogImagePath="/og/default.png"
 	skipLinkText={messages.a11y.skipToMain}
 >
 	<SiteHeader lang={lang} messages={messages} />

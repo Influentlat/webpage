@@ -2,9 +2,9 @@ import type { Messages } from './types';
 
 export const en: Messages = {
 	meta: {
-		title: 'Influent | Talent Management & Brand Partnerships',
+		title: 'Influent | Creator Marketing Specialists in Costa Rica',
 		description:
-			'Influent is a talent management and brand partnership agency delivering strategy, campaigns, and measurable growth for creators and companies.',
+			'Costa Rica creator marketing agency connecting brands with 100+ talents. 500+ campaigns delivered. Talent management, campaigns, and production.',
 	},
 	ogLocale: 'en_US',
 	a11y: {
@@ -47,22 +47,22 @@ export const en: Messages = {
 		},
 	],
 	hero: {
-		eyebrow: 'Influencer marketing',
+		eyebrow: 'Creator marketing',
 		title: 'Creator Marketing Specialists',
-		lead: 'We connect top brands with top talent in Costa Rica to build best-in-class influencer marketing with outstanding results.',
+		lead: 'We connect top brands with creator talent in Costa Rica—building campaigns that deliver measurable results across social and digital.',
 		ctaTalent: 'Explore talent',
 		ctaContact: 'Start a campaign',
 	},
 	about: {
 		title: 'Who we are',
 		subtitle:
-			'Influent is a Costa Rican company specialized in influencer marketing and project development within the digital communication and advertising industry. With a track record backed by the execution of more than 400 marketing campaigns for highly recognized companies, Influent is positioned as a strategic partner for brands looking to connect effectively with audiences through creators, experiences, and relevant narratives. The company operates as a platform connecting brands and creators, currently managing a network of more than 50 active talents and executing 20 to 25 campaigns per month.',
+			'Influent is a Costa Rican company specialized in creator marketing and project development within digital communication and advertising. With a track record backed by the execution of more than 500 marketing campaigns for highly recognized companies, Influent is positioned as a strategic partner for brands looking to connect effectively with audiences through creators, experiences, and relevant narratives. The company operates as a platform connecting brands and creators, currently managing a network of more than 50 active talents and executing 20 to 25 campaigns per month.',
 		missionTitle: 'Our mission',
 		missionBody:
-			'Drive growth for brands and creators through high-impact influencer marketing, content, and entertainment strategies, connecting audiences with authentic narratives, executional excellence, and creative solutions focused on results.',
+			'Drive growth for brands and creators through high-impact creator marketing, content, and entertainment strategies, connecting audiences with authentic narratives, executional excellence, and creative solutions focused on results.',
 		visionTitle: 'Our vision',
 		visionBody:
-			'To be the leading influencer marketing and talent management company in Central America, recognized for innovation, quality of execution, and the ability to create projects that set industry trends, generate sustainable client value, and inspire talent and brands to belong.',
+			'To be the leading creator marketing and talent management company in Central America, recognized for innovation, quality of execution, and the ability to create projects that set industry trends, generate sustainable client value, and inspire talent and brands to belong.',
 	},
 	services: {
 		title: 'Our services',
