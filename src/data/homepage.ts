@@ -5,12 +5,12 @@ import eduardoImage from '../assets/talents/eduardo.jpeg';
 import kevinImage from '../assets/talents/KevinJimenez01.jpeg';
 import churryImage from '../assets/talents/churry.jpeg';
 import rodezelImage from '../assets/talents/Rodezel01.PNG';
-import distoImage from '../assets/talents/Disto01.jpg';
+import luFernandezImage from '../assets/talents/LuFernandez01.png';
 
 export const talentRoster = [
 	{ name: 'Celeste', tags: ['Lifestyle', 'Events', 'Experience vlogs'], image: celesteImage.src },
 	{ name: 'Rodezel', tags: ['Streaming', 'Music', 'Lifestyle'], image: rodezelImage.src },
-	{ name: 'Disto', tags: ['Music', 'Producer', 'DJ'], image: distoImage.src },
+	{ name: 'Lu Fernandez', tags: ['Travel', 'Experiences', 'Lifestyle'], image: luFernandezImage.src },
 	{ name: 'Eduardo Delvo', tags: ['Education', 'Informational', 'Entertainment'], image: eduardoImage.src },
 	{ name: 'Kevin Jiménez', tags: ['Football', 'Journalist'], image: kevinImage.src },
 	{ name: 'Churry', tags: ['Lifestyle', 'Football'], image: churryImage.src },
