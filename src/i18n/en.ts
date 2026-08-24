@@ -38,7 +38,7 @@ export const en: Messages = {
 	},
 	statsLabels: [
 		{
-			stat: '400+',
+			stat: '500+',
 			label: 'Campaigns delivered',
 		},
 		{
@@ -48,7 +48,7 @@ export const en: Messages = {
 	],
 	hero: {
 		eyebrow: 'Influencer marketing',
-		title: 'Specialists in Influencer Marketing',
+		title: 'Creator Marketing Specialists',
 		lead: 'We connect top brands with top talent in Costa Rica to build best-in-class influencer marketing with outstanding results.',
 		ctaTalent: 'Explore talent',
 		ctaContact: 'Start a campaign',

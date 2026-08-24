@@ -38,7 +38,7 @@ export const es: Messages = {
 	},
 	statsLabels: [
 		{
-			stat: '400+',
+			stat: '500+',
 			label: 'Campañas entregadas',
 		},
 		{
@@ -48,7 +48,7 @@ export const es: Messages = {
 	],
 	hero: {
 		eyebrow: 'Marketing de influencia',
-		title: 'Especialistas en Marketing de Influencia',
+		title: 'Especialistas en marketing de creadores',
 		lead: 'Conectamos marcas con talentos para desarrollar Influence marketing top con los mejores resultados',
 		ctaTalent: 'Explora talento',
 		ctaContact: 'Inicia una campaña',
