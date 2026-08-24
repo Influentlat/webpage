@@ -26,8 +26,6 @@ const instagramHandle = '@_influent';
 		<p class="mb-8 max-w-[42rem] leading-relaxed text-ut-muted">{t.intro}</p>
 
 		<div class="grid items-start gap-8 grid-cols-1 md:grid-cols-2">
-			
-
 			<div>
 				<h3 class="mb-2 text-lg font-bold">{t.formTitle}</h3>
 				<p id="contact-form-note" class="mb-5 text-sm leading-normal text-slate-500">
@@ -37,9 +35,11 @@ const instagramHandle = '@_influent';
 					class="m-0"
 					name="business-inquiry"
 					method="POST"
+					action="/"
 					data-netlify="true"
 					netlify-honeypot="bot-field"
-					aria-describedby="contact-form-note"
+					data-contact-form
+					aria-describedby="contact-form-note contact-form-status"
 				>
 					<input type="hidden" name="form-name" value="business-inquiry" />
 					<p class="hidden">
@@ -100,11 +100,20 @@ const instagramHandle = '@_influent';
 							required></textarea>
 					</div>
 					<button
-						class="mt-3 w-full min-h-12 cursor-pointer rounded border-0 bg-ut-scampi px-5 py-2.5 font-sans text-xs font-extrabold uppercase tracking-wide text-ut-cinder hover:bg-ut-accent-hover focus-visible:outline-none"
+						class="mt-3 w-full min-h-12 cursor-pointer rounded border-0 bg-ut-scampi px-5 py-2.5 font-sans text-xs font-extrabold uppercase tracking-wide text-ut-cinder hover:bg-ut-accent-hover focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-70"
 						type="submit"
+						data-contact-submit
 					>
 						{t.submit}
 					</button>
+					<p
+						id="contact-form-status"
+						class="mt-4 hidden rounded-md border px-4 py-3 text-sm leading-relaxed"
+						data-contact-form-status
+						role="status"
+						aria-live="polite"
+						tabindex="-1"
+					></p>
 				</form>
 			</div>
 			<div class="flex flex-col gap-4">
@@ -148,3 +157,73 @@ const instagramHandle = '@_influent';
 		</div>
 	</div>
 </section>
+
+<script
+	define:vars={{
+		successMessage: t.successMessage,
+		errorMessage: t.errorMessage,
+		submitLabel: t.submit,
+		submittingLabel: t.submitting,
+	}}
+>
+	for (const form of document.querySelectorAll('[data-contact-form]')) {
+		if (!(form instanceof HTMLFormElement)) continue;
+
+		const submitButton = form.querySelector('[data-contact-submit]');
+		const status = form.querySelector('[data-contact-form-status]');
+		if (!(submitButton instanceof HTMLButtonElement) || !(status instanceof HTMLElement)) continue;
+
+		const defaultSubmitLabel = submitButton.textContent ?? submitLabel;
+
+		const setStatus = (type, message) => {
+			status.textContent = message;
+			status.hidden = false;
+			status.classList.remove('hidden', 'border-emerald-200', 'bg-emerald-50', 'text-emerald-900', 'border-red-200', 'bg-red-50', 'text-red-900');
+
+			if (type === 'success') {
+				status.classList.add('border-emerald-200', 'bg-emerald-50', 'text-emerald-900');
+			} else {
+				status.classList.add('border-red-200', 'bg-red-50', 'text-red-900');
+			}
+		};
+
+		const clearStatus = () => {
+			status.textContent = '';
+			status.hidden = true;
+			status.classList.add('hidden');
+			status.classList.remove('border-emerald-200', 'bg-emerald-50', 'text-emerald-900', 'border-red-200', 'bg-red-50', 'text-red-900');
+		};
+
+		form.addEventListener('submit', async (event) => {
+			event.preventDefault();
+			clearStatus();
+
+			submitButton.disabled = true;
+			submitButton.setAttribute('aria-busy', 'true');
+			submitButton.textContent = submittingLabel;
+
+			try {
+				const response = await fetch('/', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+					body: new URLSearchParams(new FormData(form)).toString(),
+				});
+
+				if (!response.ok) {
+					throw new Error('Form submission failed');
+				}
+
+				form.reset();
+				setStatus('success', successMessage);
+				status.focus();
+			} catch {
+				setStatus('error', errorMessage);
+				status.focus();
+			} finally {
+				submitButton.disabled = false;
+				submitButton.removeAttribute('aria-busy');
+				submitButton.textContent = defaultSubmitLabel;
+			}
+		});
+	}
+</script>

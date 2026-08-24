@@ -155,6 +155,10 @@ export const en: Messages = {
 			message: 'Message',
 		},
 		submit: 'Send message',
+		submitting: 'Sending…',
+		successMessage:
+			'Thanks — your message was sent. We will get back to you within 1–2 business days.',
+		errorMessage: 'Something went wrong. Please try again or email us directly.',
 		asideTitle: 'Contact channels',
 		channelsLead: 'Reach us directly through any of these channels:',
 		channelEmail: 'Email',

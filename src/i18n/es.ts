@@ -154,6 +154,10 @@ export const es: Messages = {
 			message: 'Mensaje',
 		},
 		submit: 'Enviar mensaje',
+		submitting: 'Enviando…',
+		successMessage:
+			'Gracias — recibimos tu mensaje. Te responderemos en 1–2 días hábiles.',
+		errorMessage: 'Algo salió mal. Intenta de nuevo o escríbenos directamente.',
 		asideTitle: 'Canales de contacto',
 		channelsLead: 'Contáctanos directamente por cualquiera de estos canales:',
 		channelEmail: 'Correo',

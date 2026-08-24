@@ -103,6 +103,9 @@ export interface Messages {
 			message: string;
 		};
 		submit: string;
+		submitting: string;
+		successMessage: string;
+		errorMessage: string;
 		asideTitle: string;
 		channelsLead: string;
 		channelEmail: string;
