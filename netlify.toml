@@ -9,3 +9,10 @@
 
 [context.production.environment]
   PUBLIC_SITE_URL = "https://www.influentlat.com"
+
+# Server-side root redirect — must run before the static index.html stub.
+[[redirects]]
+  from = "/"
+  to = "/en/"
+  status = 301
+  force = true
