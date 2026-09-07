@@ -1,6 +1,9 @@
 import type { Lang } from './types';
 
-export const langs: readonly Lang[] = ['en', 'es'] as const;
+/** Primary locale — root `/` redirects here. */
+export const defaultLang: Lang = 'es';
+
+export const langs: readonly Lang[] = ['es', 'en'] as const;
 
 export function isLang(value: string): value is Lang {
 	return value === 'en' || value === 'es';

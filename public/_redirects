@@ -1,4 +1,2 @@
-# Force server-side redirects (avoid Astro meta-refresh stub at /).
-/   /en/   301!
-/en /en/   301!
-/es /es/   301!
+# Root -> default locale (es). Astro serves /es/ and /en/ with trailing slashes.
+/   /es/   301!

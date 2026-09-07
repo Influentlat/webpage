@@ -11,7 +11,7 @@ import ContactBand from '../../components/sections/ContactBand.astro';
 import PartnerCampaignsBand from '../../components/sections/PartnerCampaignsBand.astro';
 import { talentRoster, brandLogos } from '../../data/homepage';
 import { getMessages, type Lang } from '../../i18n';
-import { homePath, isLang, langs } from '../../i18n/paths';
+import { defaultLang, homePath, isLang, langs } from '../../i18n/paths';
 
 export function getStaticPaths() {
 	return langs.map((lang) => ({ params: { lang } }));
@@ -19,7 +19,7 @@ export function getStaticPaths() {
 
 const { lang: langParam } = Astro.params;
 if (!isLang(langParam ?? '')) {
-	return Astro.redirect('/en/', 301);
+	return Astro.redirect(homePath(defaultLang), 301);
 }
 const lang = langParam as Lang;
 const messages = getMessages(lang);

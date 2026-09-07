@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import SiteJsonLd from '../components/seo/SiteJsonLd.astro';
 import type { Lang } from '../i18n/types';
+import { defaultLang, homePath } from '../i18n/paths';
 
 interface Props {
 	title?: string;
@@ -42,7 +43,7 @@ const altLocale = lang === 'en' ? 'es_ES' : 'en_US';
 const altLang = lang === 'en' ? 'es' : 'en';
 const altPath = lang === 'en' ? '/es/' : '/en/';
 const altHref = site ? new URL(altPath, site).href : undefined;
-const defaultLangHref = site ? new URL('/en/', site).href : undefined;
+const defaultLangHref = site ? new URL(homePath(defaultLang), site).href : undefined;
 ---
 
 <!doctype html>
