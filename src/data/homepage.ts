@@ -28,5 +28,4 @@ export const partnerVideoSources = [
 	'https://vimeo.com/1189268157?share=copy&fl=sv&fe=ci',
 	'https://vimeo.com/1189268162?share=copy&fl=sv&fe=ci',
 	'https://vimeo.com/1189268391?share=copy&fl=tl&fe=ec',
-	'https://vimeo.com/1189268388?share=copy&fl=sv&fe=ci',
 ] as const;
